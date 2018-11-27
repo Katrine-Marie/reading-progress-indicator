@@ -2,7 +2,9 @@
 This is a pure JS function, which creates a reading progress indicator.
 
 ## How To Use
-Either in the head section, or before the closing body tag, add the script like this: `<script src="PATH_TO_THE_SCRIPT_FILE/reading-progress-indicator.js"></script>`.
+Either in the head section, or before the closing body tag, add the script like this: 
+
+`<script src="PATH_TO_THE_SCRIPT_FILE/reading-progress-indicator.js"></script>`.
 
 Use the function by calling it. Here's an example:
 
