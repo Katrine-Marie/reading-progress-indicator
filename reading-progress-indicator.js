@@ -10,11 +10,13 @@ function setProgressIndicator(elId, color, height){
 	progress.style.top = 0;
 	progress.style.width = 0;
 	progress.style.background = color;
-  if(height >= 4){
+
+  progress.style.height = (height >= 8) ? "8px" : height + "px";
+  /*if(height >= 4){
 		progress.style.height = "4px";
 	}else {
 		progress.style.height = height + "px";
-	}
+	}*/
 
 	window.addEventListener("scroll", function(){
 		var elHeight = el.scrollHeight;
