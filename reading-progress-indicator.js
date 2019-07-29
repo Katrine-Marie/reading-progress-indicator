@@ -1,4 +1,4 @@
-function setProgressIndicator(elId, color){
+function setProgressIndicator(elId, color, height){
   var body = document.body;
 	var el = document.getElementById(elId);
 
@@ -9,8 +9,12 @@ function setProgressIndicator(elId, color){
 	progress.style.position = "fixed";
 	progress.style.top = 0;
 	progress.style.width = 0;
-	progress.style.height = "4px";
 	progress.style.background = color;
+  if(height >= 4){
+		progress.style.height = "4px";
+	}else {
+		progress.style.height = height + "px";
+	}
 
 	window.addEventListener("scroll", function(){
 		var elHeight = el.scrollHeight;
