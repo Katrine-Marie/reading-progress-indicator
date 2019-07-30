@@ -33,6 +33,16 @@ function setProgressIndicator(elId, color, height, showOnMobile, breakpoint){
   	}
   }
 
+  function setMobileView(){
+		if(showOnMobile === false){
+			if(getBrowserWidth() > breakpoint){
+				progress.style.display = "block";
+			}else {
+				progress.style.display = "none";
+			}
+		}
+	}
+
 	window.addEventListener("scroll", function(){
 		var elHeight = el.scrollHeight;
 
