@@ -1,4 +1,4 @@
-function setProgressIndicator(elId, color, height){
+function setProgressIndicator(elId, color, height, showOnMobile, breakpoint){
   var body = document.body;
 	var el = document.getElementById(elId);
 
@@ -17,6 +17,21 @@ function setProgressIndicator(elId, color, height){
 	}else {
 		progress.style.height = height + "px";
 	}*/
+
+  // test browser width in different browsers
+  function getBrowserWidth() {
+  	if (self.innerHeight) {
+  		return self.innerWidth;
+  	}
+
+  	if (document.documentElement && document.documentElement.clientWidth) {
+  		return document.documentElement.clientWidth;
+  	}
+
+  	if (document.body) {
+  		return document.body.clientWidth;
+  	}
+  }
 
 	window.addEventListener("scroll", function(){
 		var elHeight = el.scrollHeight;
