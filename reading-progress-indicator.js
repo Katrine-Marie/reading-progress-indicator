@@ -12,11 +12,6 @@ function setProgressIndicator(elId, color, height, showOnMobile, breakpoint){
 	progress.style.background = color;
 
   progress.style.height = (height >= 8) ? "8px" : height + "px";
-  /*if(height >= 4){
-		progress.style.height = "4px";
-	}else {
-		progress.style.height = height + "px";
-	}*/
 
   // test browser width in different browsers
   function getBrowserWidth() {
