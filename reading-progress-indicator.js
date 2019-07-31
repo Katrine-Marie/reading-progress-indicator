@@ -43,6 +43,9 @@ function setProgressIndicator(elId, color, height, showOnMobile, breakpoint){
 		}
 	}
 
+  setMobileView();
+	window.onresize = setMobileView;
+
 	window.addEventListener("scroll", function(){
 		var elHeight = el.scrollHeight;
 
