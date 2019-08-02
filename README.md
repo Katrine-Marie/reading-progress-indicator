@@ -10,9 +10,11 @@ Use the function by calling it. Here's an example:
 ```
 <script>
   const elId = "el";
-  setProgressIndicator(elId, "green", 4);
+  setProgressIndicator(elId, "green", 4, false, 768);
 </script>
 ```
 
-The first parameter contains the ID of the element you wish to use the reading indicator on. 
-The second parameter contains the background you wish to use on the indicator itself. Bear in mind though, that it is a mere 4px tall before you let your creativity run loose.
+The first parameter contains the ID of the element you wish to use the reading indicator on.
+The second parameter contains the (CSS) background you wish to use on the indicator itself.
+The third parameter is the pixel height of the progress indicator (bear in mind that all numbers > 8 will default to 8px as a maximum).
+The fourth parameter is a boolean describing whether or not the indicator should appear on mobile, and the fifth parameter is the pixel width of the screen at which the indicator should be visible.
