@@ -14,7 +14,13 @@ Use the function by calling it. Here's an example:
 </script>
 ```
 
-The first parameter contains the ID of the element you wish to use the reading indicator on.
-The second parameter contains the (CSS) background you wish to use on the indicator itself.
-The third parameter is the pixel height of the progress indicator (bear in mind that all numbers > 8 will default to 8px as a maximum).
-The fourth parameter is a boolean describing whether or not the indicator should appear on mobile, and the fifth parameter is the pixel width of the screen at which the indicator should be visible.
+## Function Parameters
+
+### Mandatory
+* Param 1: the ID of the element you wish to use the reading indicator on.
+* Param 2: the (CSS) background you wish to use on the indicator itself.
+* Param 3: the pixel height of the progress indicator (bear in mind that all numbers > 8 will default to 8px as a maximum).
+
+### Optional
+* Param 4: a boolean describing whether or not the indicator should appear on mobile
+* Param 5: the pixel width of the screen above which the indicator should be visible.
