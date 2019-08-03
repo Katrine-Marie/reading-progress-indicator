@@ -5,10 +5,11 @@
 	<title>Reading Progress Indicator Demo</title>
 
 	<style>
-		/* DEMO STYLES */
+		/* DEMO STYLES - only for use in this specific demo */
 		html, body {
 			margin:0;
 			padding:0;
+			font-family: "Helvetica", "Arial", sans-serif;
 		}
 
 		body {height:400vh;}
@@ -34,8 +35,14 @@
   <script src="../reading-progress-indicator.js"></script>
 	<script>
 
+		// Example with all parameters set
 		const elId = "el";
-		setProgressIndicator(elId, "green", 6, true, 768);
+		setProgressIndicator(elId, "green", 4, true, 768);
+
+		// Example with only mandatory parameters set
+		const elId = "el";
+		setProgressIndicator(elId, "linear-gradient(45deg, yellow, red)", 8);
+
 
 	</script>
 </body>
